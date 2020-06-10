@@ -5,6 +5,7 @@ import New from '../views/New.vue'
 import Me from '../views/Me.vue'
 import Tour from '../views/Tour.vue'
 import Sto from '../views/Sto.vue'
+// import Edit from '../views/Edit.vue'
 
 Vue.use(VueRouter)
 
