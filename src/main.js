@@ -13,7 +13,10 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-
+window.onload = function () {
+  autoFix()
+  console.log('load')
+}
 window.onresize = function () {
   autoFix()
   console.log('resize')

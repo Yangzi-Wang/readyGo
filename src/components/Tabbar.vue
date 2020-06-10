@@ -54,14 +54,14 @@ export default {
   .mei,
   .mei_a {
     background-size: contain;
-    width: 2rem;
-    height: 2rem;
+    width: 9vw;
+    height: 9vw;
   }
   .newi,
   .newi_a {
     background-size: contain;
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 15vw;
+    height: 15vw;
   }
   .rect {
     position: absolute;
