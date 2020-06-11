@@ -42,9 +42,9 @@ export default {
   data() {
     return {
       banner: [
-        require("../assets/banner1.png"),
-        require("../assets/banner2.png"),
-        require("../assets/banner3.png")
+        require("../assets/banner1.jpg"),
+        require("../assets/banner2.jpg"),
+        require("../assets/banner3.jpg")
       ],
       article: [
         {
@@ -52,25 +52,25 @@ export default {
           title: "冬季恋歌|韩国首尔之旅"
         },
         {
-          imageUrl: require("../assets/arti3.png"),
+          imageUrl: require("../assets/arti3.jpg"),
           title: "去重庆 | 重庆四日精致行"
         },
         {
-          imageUrl: require("../assets/arti2.png"),
+          imageUrl: require("../assets/arti2.jpg"),
           title: "海南 | 我和夏天有个约会"
         },
         {
-          imageUrl: require("../assets/arti1.png"),
+          imageUrl: require("../assets/arti1.jpg"),
           title: "东京游记 | 回忆起对这座城市念念不忘的情感"
         }
       ],
       article2: [
         {
-          imageUrl: require("../assets/arti2.png"),
+          imageUrl: require("../assets/arti2.jpg"),
           title: "海南 | 我和夏天有个约会"
         },
         {
-          imageUrl: require("../assets/arti1.png"),
+          imageUrl: require("../assets/arti1.jpg"),
           title: "东京游记 | 回忆起对这座城市念念不忘的情感"
         },
         {
@@ -78,7 +78,7 @@ export default {
           title: "冬季恋歌|韩国首尔之旅"
         },
         {
-          imageUrl: require("../assets/arti3.png"),
+          imageUrl: require("../assets/arti3.jpg"),
           title: "去重庆 | 重庆四日精致行"
         }
       ]
