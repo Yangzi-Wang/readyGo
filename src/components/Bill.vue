@@ -1,25 +1,25 @@
 <template>
   <div>
-    <el-card :body-style="{ padding: '10px',height:'160px' }">
+    <el-card :body-style="{ padding: '20px',height:'140px' }" class="card">
       <div class="top">
         <div>
           <span>单位：</span>
-        <el-dropdown trigger="click" size="mini">
-  <span class="el-dropdown-link">
-    ￥<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>￥</el-dropdown-item>
-    <el-dropdown-item>$</el-dropdown-item>
-    <el-dropdown-item>日元</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
+        <el-dropdown trigger="click" size="mini" @command="handleCommand">
+		<span class="el-dropdown-link">
+			{{unit}}<i class="el-icon-arrow-down el-icon--right"></i>
+		</span>
+		<el-dropdown-menu slot="dropdown">
+			<el-dropdown-item command="￥">￥</el-dropdown-item>
+			<el-dropdown-item command="$">$</el-dropdown-item>
+			<el-dropdown-item command="日元">日元</el-dropdown-item>
+		</el-dropdown-menu>
+		</el-dropdown>
         </div>
-        <div>编辑</div>
+		<i class="el-icon-edit" style="font-size: 0.45rem;" @click="goto"></i>
       </div>
       <div class="billct">
-        <div class="pay"><div class="bname">预算</div><div class="bud">400</div></div>
-        <div class="pay"><div class="bname">实际</div><div class="fact">550</div></div>
+        <div class="pay left"><div class="bname">预算</div><div class="bud">{{budget}}</div></div>
+        <div class="pay"><div class="bname">实际</div><div class="fact">{{fact}}</div></div>
       </div>
     </el-card>
   </div>
@@ -28,9 +28,22 @@
 export default {
   name: 'Bill',
   data(){
-    return {
-      
-    }
+	return {
+		unit:'￥',
+		budget:400,
+		fact:550
+	}
+  },
+  methods:{
+	handleCommand(command) {
+		this.unit=command;
+	},
+	goto(){
+		this.$router.push({
+			path:'/editBill',
+			name:'editBill'
+		})
+	}
   }
 }
 </script>
@@ -54,23 +67,40 @@ export default {
     flex-direction: column;
     align-items: center;
   }
+  .left{
+	border-right: solid 1px #C0C0C0;
+	padding-right: 20vw;
+  }
   .bname{
     font-size: 18px;
     padding-bottom: 10px;
   }
   .bud{
-    font-size: 30px;
+    font-size: 25px;
     color: $color2;
   }
   .fact{
-    font-size: 30px;
+    font-size: 25px;
     color: $color1;
   }
   .billct{
-    height: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+	height: 120px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+  }
+  .card{
+	position: relative;
+	animation: slied 1s ease;
+	-webkit-animation:slied 1s ease;
+  }
+  @-wekit-keyframes slied{
+	from{left: -100vw;}
+	to{left: 0;}
+  }
+  @keyframes slied{
+	from{left: -100vw;}
+	to{left: 0;}
   }
 </style>

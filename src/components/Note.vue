@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-card :body-style="{ padding: '0px',height:'180px' }">
+    <el-card :body-style="{ padding: '0px',height:'180px' }" class="card">
       <el-tabs :tab-position="'left'" style="height: 180px;">
         <el-tab-pane label="物品">
           <div class="tag" v-show="edit?false:true">
@@ -158,5 +158,18 @@ bottom: 2px;
 .input-new-tag {
   width: 90px;
   vertical-align: bottom;
+}
+.card{
+	position: relative;
+	animation: slied 1s ease;
+	-webkit-animation:slied 1s ease;
+}
+@-wekit-keyframes slied{
+	from{left: -100vw;}
+	to{left: 0;}
+}
+@keyframes slied{
+	from{left: -100vw;}
+	to{left: 0;}
 }
 </style>

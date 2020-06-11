@@ -39,14 +39,14 @@
 					</div>
 					<div class="ctn">
 						<div class="card_img_left">
-							<img src="../assets/card.jpg" width="160vw" />
+							<img src="../assets/card.jpg" width="180vw" />
 						</div>
 						<div class="card_img_right">
 							<div class="right_1">
-								<img src="../assets/card.jpg" width="80vw" />
+								<img src="../assets/card.jpg" width="90vw" />
 							</div>
 							<div class="right_2">
-								<img src="../assets/card.jpg" width="80vw" />
+								<img src="../assets/card.jpg" width="90vw" />
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ export default {
 	}
 	.cardCtn{
 		margin-top: 40px;
-		width: 80vw;
+		width: 90vw;
 	}
 	.card{
 		border-radius: 8px;
@@ -114,7 +114,7 @@ export default {
 	.small_card{
 		text-align: center;
 		float: left;
-		width: 34vw;
+		width: 38vw;
 		padding-top:1vh;
 		height: 6vh;
 	}
@@ -130,10 +130,10 @@ export default {
 		margin-top: -2vh;
 	}
 	.share span:nth-child(1){
-		margin-right: 42vw;
+		margin-right: 52vw;
 	}
 	.clearfix span:nth-child(1){
-		margin-right: 32vw;
+		margin-right: 42vw;
 	}
 	.ctn{
 		padding-left: 1vw;
@@ -141,13 +141,13 @@ export default {
 		display: flex;
 	}
 	.card_img_left{
-		width: 45vw;
-		height: 23vh;
+		width: 50vw;
+		height: 25vh;
 		overflow: hidden;
 	}
 	.right_1,.right_2{
 		width: 30vw;
-		height: 11vh;
+		height: 12vh;
 		margin-bottom:1vh ;
 		overflow: hidden;
 	}
