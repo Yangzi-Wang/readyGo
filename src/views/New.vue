@@ -29,7 +29,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .new{
 	margin: auto;
 	width: 85vw;
