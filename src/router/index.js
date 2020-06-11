@@ -29,6 +29,16 @@ Vue.use(VueRouter)
     // component: () => import(/* webpackChunkName: "about" */ '../views/New.vue')
     component: Sto
   },
+  {
+    path: '/editBill',
+    name: 'editBill',
+    component: () => import(/* webpackChunkName: "editBill" */ '../views/EditBill.vue')
+  },
+  {
+    path: '/editNote',
+    name: 'editNote',
+    component: () => import(/* webpackChunkName: "editNote" */ '../views/EditNote.vue')
+  },
 ]
 
 const router = new VueRouter({
