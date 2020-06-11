@@ -38,7 +38,7 @@ export default {
 @import "../_variables.scss";
 .tabbar {
   width: 100%;
-  height: 9.3vh;
+  height: 9vh;
   z-index: 1;
   position: fixed;
   bottom: 0;
@@ -54,20 +54,20 @@ export default {
   .mei,
   .mei_a {
     background-size: contain;
-    width: 9vw;
-    height: 9vw;
+    width: 7vw;
+    height: 7vw;
   }
   .newi,
   .newi_a {
     background-size: contain;
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 13vw;
   }
   .rect {
     position: absolute;
     bottom: 0;
     border-top: 1px solid $color_font;
-    height: 7.6vh;
+    height: 7vh;
     width: 100%;
     background-color: #fff;
   }
