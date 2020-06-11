@@ -14,7 +14,7 @@
 		<el-slider :max="20" :step="1" v-model="days">
 		</el-slider>
 	</el-card>
-    <el-button class="btn" @click="$router.replace('/sto')">开始定制</el-button>
+    <el-button class="btn" @click="goto()">开始定制</el-button>
   </div>
 </template>
 <script>
@@ -26,6 +26,19 @@ export default {
 	days:0,
 	location:''
     }
+  },
+  methods:{
+	goto(){
+		this.$router.push({
+			path:'/sto',
+			name:'Sto',
+			params:{
+				location:this.location,
+				date:this.date,
+				days:this.days
+			}
+		})
+	}
   }
 }
 </script>

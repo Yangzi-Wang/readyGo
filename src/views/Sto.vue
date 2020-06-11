@@ -12,6 +12,13 @@
 <script>
 export default {
   name: 'Sto',
+  data(){
+	return{
+		date:this.$route.params.date,
+		location:this.$route.params.location,
+		days:this.$route.params.days
+	}
+  }
 }
 </script>
 <style scoped>
